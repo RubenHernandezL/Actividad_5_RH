@@ -11,8 +11,7 @@
             <label for="date">
                 Fecha
             </label>
-            <input type="text" id="date" placeholder="Introduce la fecha de la publicación"
-                [(ngModel)]="newArticle.date">
+            <input type="date" id="date" [max]="getCurrentDate()" placeholder="Introduce la fecha de la publicación" (input)="onDateInputChange($event)" [(ngModel)]="newArticle.date">
         </div>
         <div class="w-Form__in">
             <label for="img">
@@ -25,8 +24,8 @@
             <label for="story">
                 Contenido
             </label>
-            <input type="text" id="story" placeholder="Introduce el cuerpo de la noticia" [(ngModel)]="newArticle.story"
-                class="modbox">
+            <textarea name="text" id="story" cols="30" rows="10" placeholder="Introduce el cuerpo de la noticia" [(ngModel)]="newArticle.story"
+                class="modbox"></textarea>
         </div>
         <button (click)="getDataForm()" class="button">Publicar en el Blog</button>
     </div>

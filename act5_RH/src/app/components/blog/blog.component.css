@@ -48,11 +48,28 @@
     box-shadow: 0 0 5px rgba(255, 85, 0, 0.687);
 }
 
+.w-Form textarea {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    background-color: #f1f1f1;
+    box-shadow: 1px 3px 5px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 100%;
+}
+
+.w-Form textarea:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 5px rgba(255, 85, 0, 0.687);
+}
+
+
 .modbox {
     height: 5rem;
 }
 
-/* Butto */
+/* Button */
 .button {
     display: inline-block;
     padding: 0.7rem 1.2rem;
