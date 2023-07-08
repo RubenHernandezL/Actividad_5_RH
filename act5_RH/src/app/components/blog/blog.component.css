@@ -1,0 +1,90 @@
+/* Form */
+.wraper-p{
+    background-color: rgb(222, 220, 220);
+    margin: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 9px 6px rgba(0, 0, 0, 0.3);
+}
+
+.w-Form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid rgba(169, 85, 0, 0.751);
+}
+
+.w-Form__in {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem;
+    gap: 2.5%;
+    width: 100%;
+}
+
+.w-Form label {
+    display: inline-block;
+    width: 7rem;
+    padding: .5rem;
+    align-items: center;
+    font-weight:bold;
+}
+
+.w-Form input {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #f1f1f1;
+    box-shadow: 1px 3px 5px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 100%;
+}
+
+.w-Form input:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 5px rgba(255, 85, 0, 0.687);
+}
+
+.modbox {
+    height: 5rem;
+}
+
+/* Butto */
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: #b56604;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff9933;
+  }
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button:active {
+    background-color: #ff751a;
+  }
+
+/* Articulos */
+.w-Articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 1.5rem;
+}

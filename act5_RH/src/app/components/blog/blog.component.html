@@ -1,0 +1,35 @@
+<div class="wraper-p">
+    <div class="w-Form">
+        <div class="w-Form__in">
+            <label for="title">
+                Título
+            </label>
+            <input type="text" id="title" placeholder="Introduce el título de la noticia"
+                [(ngModel)]="newArticle.title">
+        </div>
+        <div class="w-Form__in">
+            <label for="date">
+                Fecha
+            </label>
+            <input type="text" id="date" placeholder="Introduce la fecha de la publicación"
+                [(ngModel)]="newArticle.date">
+        </div>
+        <div class="w-Form__in">
+            <label for="img">
+                Imágen
+            </label>
+            <input type="text" id="img" placeholder="Introduce el URL de la imágen de la noticia"
+                [(ngModel)]="newArticle.img">
+        </div>
+        <div class="w-Form__in">
+            <label for="story">
+                Contenido
+            </label>
+            <input type="text" id="story" placeholder="Introduce el cuerpo de la noticia" [(ngModel)]="newArticle.story"
+                class="modbox">
+        </div>
+        <button (click)="getDataForm()" class="button">Publicar en el Blog</button>
+    </div>
+</div>
+<Section [innerHTML]="cargarArticulos()" class="w-Articulos">
+</Section>

@@ -1,0 +1,12 @@
+.bgimg {
+    background-image: url('https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=740&t=st=1688785959~exp=1688786559~hmac=6f8114d0b1b796e379d5ffa8ae4f83fc6d40e985708b1aa1cb764d3fd771d3ff');
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+    background-color: rgb(222, 220, 220);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
