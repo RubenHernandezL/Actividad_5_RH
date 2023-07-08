@@ -7,9 +7,11 @@ import { Articulos } from './interfaces/articulos.interface';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  //title = 'act5_RH'; este es el título que siempre me escribe al iniciar el proyecto, lo comento igual que su componente en ts para que evitar errores.
-  articulos: Articulos[] = [];
+  //title = 'act5_RH'; este es el título que siempre me escribe al iniciar el proyecto, lo comento igual que su componente en .spec.ts para evitar futuros errores.
 
+  //Se declaran los artículos
+  articulos: Articulos[] = [];
+  //Se inicializan los artículos fijos en el constructor
   constructor() {
     this.articulos = [
       {
@@ -26,5 +28,5 @@ export class AppComponent {
       }
     ];
   };
-
+  
 }

@@ -1,5 +1,5 @@
 /* Form */
-.wraper-p{
+.wraper-p {
     background-color: rgb(222, 220, 220);
     margin: 3rem;
     border-radius: 1rem;
@@ -29,7 +29,7 @@
     width: 7rem;
     padding: .5rem;
     align-items: center;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .w-Form input {
@@ -82,23 +82,23 @@
     background-color: #b56604;
     border: none;
     transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #ff9933;
-  }
-  
-  .button:focus {
+}
+
+.button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .button:active {
+}
+
+.button:active {
     background-color: #ff751a;
-  }
+}
 
 /* Articulos */
-.w-Articulos{
+.w-Articulos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

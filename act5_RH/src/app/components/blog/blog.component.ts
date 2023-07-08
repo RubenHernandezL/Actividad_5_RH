@@ -62,7 +62,7 @@ export class BlogComponent {
       event.target.value = this.formatDate(currentDate);
     }
   }
-  
+  //Formato de la fecha
   formatDate(date: Date): string {
     const year = date.getFullYear();
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
