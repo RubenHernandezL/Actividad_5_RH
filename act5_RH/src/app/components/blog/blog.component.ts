@@ -24,7 +24,7 @@ export class BlogComponent {
     });
     return listArticulos;
   };
-// Lo utilizamos para pintar los nuevos artículos y hacer un push en el array de artículos
+  // Lo utilizamos para pintar los nuevos artículos y hacer un push en el array de artículos
   getDataForm(): void {
     if (this.newArticle.title !== "" && this.newArticle.title !== " " && this.newArticle.date !== "" && this.newArticle.date !== " " && this.newArticle.story !== "" && this.newArticle.story !== " " && this.newArticle.img !== "" && this.newArticle.img !== " ") {
       const isDuplicate = this.misArticulos.find(
@@ -57,7 +57,7 @@ export class BlogComponent {
   onDateInputChange(event: any): void {
     const inputDate = new Date(event.target.value);
     const currentDate = new Date();
-  
+
     if (inputDate > currentDate) {
       event.target.value = this.formatDate(currentDate);
     }
@@ -69,5 +69,5 @@ export class BlogComponent {
     const day = date.getDate().toString().padStart(2, '0');
     return `${year}-${month}-${day}`;
   }
-  
+
 }
