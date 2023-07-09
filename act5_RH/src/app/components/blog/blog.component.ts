@@ -25,7 +25,7 @@ export class BlogComponent {
     return listArticulos;
   };
 // Lo utilizamos para pintar los nuevos artículos y hacer un push en el array de artículos
-  getDataForm() {
+  getDataForm(): void {
     if (this.newArticle.title !== "" && this.newArticle.title !== " " && this.newArticle.date !== "" && this.newArticle.date !== " " && this.newArticle.story !== "" && this.newArticle.story !== " " && this.newArticle.img !== "" && this.newArticle.img !== " ") {
       const isDuplicate = this.misArticulos.find(
         (elemento) =>
@@ -54,7 +54,7 @@ export class BlogComponent {
     return `${year}-${month}-${day}`;
   }
   //estas otras 2 para validar si la fecha es igual o inferior a fecha actual
-  onDateInputChange(event: any) {
+  onDateInputChange(event: any): void {
     const inputDate = new Date(event.target.value);
     const currentDate = new Date();
   
